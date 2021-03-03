@@ -13,13 +13,23 @@ console.log('##### Challenge 1 #####');
 //
 // Console out the numbers from 1-20, but only if they're divisible by 3.
 // Hint: Use `if` and a modulus operation.
-
+for ( let i = 1; i <= 20; i++ ){
+    if ( i % 3 === 0){
+        console.log (i)
+    }
+}
 
 
 console.log('##### Challenge 2 #####');
 // 2.
 //
 // Console out the numbers from 1-20. BACKWARDS.
+let a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+for ( const number of a ){
+ a.reverse()
+console.log (number)
+}
+
 
 
 
@@ -29,7 +39,10 @@ console.log('##### Challenge 3 #####');
 // For the string 'Boy howdy am I good at this!', console out the letters
 // individually.
 let string3 = 'Boy howdy am I good at this!';
-
+for (const letters of string3){
+    if (letters !== " ")
+    console.log (letters)
+}
 
 
 console.log('##### Challenge 4 #####');
@@ -41,13 +54,19 @@ let string4 = 'And getting better every day.';
 
 
 
+
+
 console.log('##### Challenge 5 #####');
 // 5. 
 //
 // For the string 'Am I the best?', console out the letters individually, AND
 // UPPERCASED.
 let string5 = 'Am I the best?';
-
+for ( const letter of string5){
+    if (letter !== " " && letter !== "?"){
+    console.log (letter.toUpperCase ())
+}
+}
 
 
 console.log('##### Challenge 6 #####');
@@ -56,7 +75,13 @@ console.log('##### Challenge 6 #####');
 // For the string 'Whoa, I am the best!', console out the letters individually,
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
+for (const letters of string6){
+    if (letters !== " " && letters !== "!"){
+     
+   console.log (letters)
+}
 
+}
 
 
 console.log('##### Challenge 7 #####');
@@ -66,7 +91,12 @@ console.log('##### Challenge 7 #####');
 //  individually, but backwards. That is, the first console log should be
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = 'I am become death, destroyer of worlds.';
-
+for (const letters of string7){
+    if (letters !== "  " && letters !== ".")
+    console.log (letters);
+    const char = string7.split("").reverse();
+     console.log (char)
+}
 
 
 console.log('##### Challenge 8 #####');
@@ -81,7 +111,10 @@ const names = 'Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|
 // You'll know you're at a new person's name when you hit the pipe character.
 
 // Don't print the pipes!
-
+for (const char of names){
+    const letters = names.split ("");
+    if (letters)
+}
 
 
 
